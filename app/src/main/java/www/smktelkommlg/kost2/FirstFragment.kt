@@ -29,7 +29,7 @@ class FirstFragment : Fragment() {
             .getKosts()
             .enqueue(object : Callback<List<www.smktelkommlg.kost2.Response>> {
                 //override fun onFailure(call: Call<List<www.smktelkommlg.kost2.Response>>, t: Throwable) {
-                    //Toast.makeText(this@FirstFragment, t.localizedMessage, Toast.LENGTH_SHORT).show()
+                //Toast.makeText(this@FirstFragment, t.localizedMessage, Toast.LENGTH_SHORT).show()
                 //}
 
                 override fun onResponse(
@@ -39,7 +39,7 @@ class FirstFragment : Fragment() {
                     rvUser.adapter = Adapter(response.body())
                 }
                 override fun onFailure(call: Call<List<www.smktelkommlg.kost2.Response>>, error: Throwable) {
-                Log.e("tag", "errornya ${error.message}")
+                    Log.e("tag", "errornya ${error.message}")
                 }
 
             })

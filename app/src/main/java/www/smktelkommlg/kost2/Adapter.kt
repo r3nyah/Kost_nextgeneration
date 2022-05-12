@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.item_user.view.*
 //import com.bumptech.glide.Glide
 //import com.bumptech.glide.request.RequestOptions
@@ -24,8 +25,13 @@ class Adapter(val data: List<Response>?) : RecyclerView.Adapter<Adapter.MyHolder
 
     class MyHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(get: Response?) {
-            itemView.nama.text = get?.name
-            itemView.desc.text = get?.description
+            with(itemView) {
+                itemView.nama.text = get?.name
+                itemView.desc.text = get?.description
+                Glide.with(this)
+                    .load(get?.imageUrl)
+                    .into(itemView.image)
+            }
         }
 
     }
