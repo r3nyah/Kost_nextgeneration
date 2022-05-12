@@ -25,7 +25,13 @@ class ViewPagerAdapter(private val mContext: Context,fm:FragmentManager):
         return mContext.resources.getString(TAB_TITLES[position])
     }
     companion object {
+        var image = intArrayOf(
+            R.drawable.ic_baseline_home_24,
+            R.drawable.ic_baseline_favorite_24,
+        )
         @StringRes
-        private val TAB_TITLES = intArrayOf(R.string.tab_text_1,R.string.tab_text_2)
+        //private val TAB_TITLES = intArrayOf(R.string.tab_text_1,R.string.tab_text_2)
+        //private val TAB_TITLES = image
+        private val TAB_TITLES = intArrayOf(R.string.home,R.string.heart)
     }
 }

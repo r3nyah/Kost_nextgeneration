@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
 import kotlinx.android.synthetic.main.item_user.view.*
 //import com.bumptech.glide.Glide
 //import com.bumptech.glide.request.RequestOptions
@@ -30,6 +31,8 @@ class Adapter(val data: List<Response>?) : RecyclerView.Adapter<Adapter.MyHolder
                 itemView.desc.text = get?.description
                 Glide.with(this)
                     .load(get?.imageUrl)
+                    .fitCenter()
+                    .apply(RequestOptions().override(100, 100))
                     .into(itemView.image)
             }
         }
