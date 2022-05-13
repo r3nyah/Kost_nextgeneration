@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Kost2</string>
+    <string name="app_name">Kost dekat moklet</string>
     <string name="tab_text_1">First</string>
     <string name="tab_text_2">Second</string>
-    <string name="home">🏘️</string>
+    <string name="home">⌂</string>
     <string name="heart">❤️</string>
 </resources>

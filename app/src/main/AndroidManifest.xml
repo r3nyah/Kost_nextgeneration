@@ -16,6 +16,9 @@
         android:theme="@style/Theme.Kobokanaer"
         tools:targetApi="31">
         <activity
+            android:name=".CardAdapter"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true" />
         <activity

@@ -41,7 +41,7 @@ class Intro : AppCompatActivity() {
         lifecycleScope.launch(Dispatchers.Default){
             try{
                 for (i in 0..50){
-                    delay(500)
+                    delay(1000)
                     val percentage = i*10
 
                     withContext(Dispatchers.Main){
