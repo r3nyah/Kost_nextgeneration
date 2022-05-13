@@ -4,7 +4,7 @@ import android.view.View
 
 interface RecyclerViewClickListener {
 
-    // method yang akan dipanggil di MainActivity
-    fun onItemClicked(view: View, response: Response)
-
+    class OnClickListener(val clickListener: (response: Response) -> Unit) {
+        fun onClick(response: Response) = clickListener(response)
+    }
 }
