@@ -32,7 +32,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setMode(selectedMode: Int) {
-        val moveCardAdapter = Intent(this, CardAdapter::class.java)
+        val moveCardAdapter = Intent(this, DetailActivity::class.java)
+        val moveHome = Intent(this, MainActivity::class.java)
         //val moveCloud = Intent(this,Cloud::class.java)
         when (selectedMode) {
             R.id.cloud -> {
@@ -40,7 +41,7 @@ class MainActivity : AppCompatActivity() {
                 //mediaPlayer.stop()
             }
             R.id.home -> {
-                //startActivity(moveHome)
+                startActivity(moveHome)
                 //mediaPlayer.stop()
             }
 

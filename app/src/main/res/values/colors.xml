@@ -11,9 +11,11 @@
     <color name="red">#FF0000</color>
     <color name="gold">#B29700</color>
     <color name="darkblue">#002B4D</color>
+    <color name="darkblue2">#002B9D</color>
     <color name="cream">#E5CB90</color>
     <color name="lightgray">#E0E0E0</color>
     <color name="primary">#ADD8E6</color>
     <color name="primary_dark">#002B4D</color>
     <color name="accent">#E5CB90</color>
+    <color name="darkgray">#808080</color>
 </resources>
