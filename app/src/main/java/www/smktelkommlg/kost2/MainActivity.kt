@@ -26,10 +26,7 @@ class MainActivity : AppCompatActivity() {
                 //Toast.makeText(this@FirstFragment, t.localizedMessage, Toast.LENGTH_SHORT).show()
                 //}
 
-                override fun onResponse(
-                    call: Call<List<Response>>,
-                    response: retrofit2.Response<List<Response>>
-                ) {
+                override fun onResponse(call: Call<List<Response>>, response: retrofit2.Response<List<Response>>) {
                     rvUser.adapter = Adapter(response.body())
                 }
                 override fun onFailure(call: Call<List<Response>>, error: Throwable) {
