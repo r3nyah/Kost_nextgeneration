@@ -31,8 +31,8 @@ class CardAdapter(val data: List<Response>?) : RecyclerView.Adapter<CardAdapter.
     override fun onBindViewHolder(holder: MyHolder, position: Int) {
         holder.bind(data?.get(position))
         //holder.itemView.setOnClickListener(View.OnClickListener {
-            //Toast.makeText(holder.itemView.context,"Kamu Memilih" , Toast.LENGTH_SHORT).show()
-            //activity.startActivity(Intent(activity, NVirementEmmeteur::class.java))
+        //Toast.makeText(holder.itemView.context,"Kamu Memilih" , Toast.LENGTH_SHORT).show()
+        //activity.startActivity(Intent(activity, NVirementEmmeteur::class.java))
         //})
     }
 

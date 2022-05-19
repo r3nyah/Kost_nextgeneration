@@ -44,7 +44,7 @@ class Adapter(val data: List<Response>?) : RecyclerView.Adapter<Adapter.MyHolder
                     .apply(RequestOptions().override(100, 100))
                     .into(itemView.image)
                 itemView.price.text = get?.price.toString()
-                
+
             }
         }
 

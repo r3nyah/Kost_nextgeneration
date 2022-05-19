@@ -18,6 +18,7 @@ class DetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         //communicationViewModel = ViewModelProviders.of(requireActivity()).get(CommunicationViewModel::class.java)
         NetworkConfig().getService()
             .getKosts()
