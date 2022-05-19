@@ -6,15 +6,30 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.Call
 import retrofit2.Callback
 
 
 class MainActivity : AppCompatActivity() {
+    private val fragmentList = ArrayList<Fragment>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val adapter = IntroSliderAdapter(this)
+        vpIntroSlider.adapter = adapter
+
+        val addAll = fragmentList.addAll(
+            listOf(
+                IntroFragment1(), IntroFragment2(), IntroFragment3()
+            )
+        )
+        adapter.setFragmentList(fragmentList)
+
+        indicatorLayout.setIndicatorCount(adapter.itemCount)
+        indicatorLayout.selectCurrentPosition(0)
+
 
         //view_pager.adapter = ViewPagerAdapter( this, supportFragmentManager)
         //tabs.setupWithViewPager(view_pager)
@@ -34,6 +49,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
             })
+
 
     }
     override fun onBackPressed(){

@@ -16,6 +16,15 @@
         android:theme="@style/Theme.Kobokanaer"
         tools:targetApi="31">
         <activity
+            android:name=".IntroFragment3"
+            android:exported="false" />
+        <activity
+            android:name=".IntroFragment2"
+            android:exported="false" />
+        <activity
+            android:name=".IntroFragment1"
+            android:exported="false" />
+        <activity
             android:name=".CardAdapter"
             android:exported="false" />
         <activity

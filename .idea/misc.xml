@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/62822/AndroidStudioProjects/Kost2/app/src/main/res/drawable-v24/indicator_unselected.xml" value="0.1265" />
         <entry key="..\:/Users/62822/AndroidStudioProjects/Kost2/app/src/main/res/drawable/border_image.xml" value="0.1" />
         <entry key="..\:/Users/62822/AndroidStudioProjects/Kost2/app/src/main/res/drawable/gradient_background.xml" value="0.1275" />
         <entry key="..\:/Users/62822/AndroidStudioProjects/Kost2/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.1275" />
@@ -14,7 +15,10 @@
         <entry key="..\:/Users/62822/AndroidStudioProjects/Kost2/app/src/main/res/layout/activity_detail.xml" value="0.18" />
         <entry key="..\:/Users/62822/AndroidStudioProjects/Kost2/app/src/main/res/layout/activity_first_fragment.xml" value="0.18" />
         <entry key="..\:/Users/62822/AndroidStudioProjects/Kost2/app/src/main/res/layout/activity_intro.xml" value="0.25" />
-        <entry key="..\:/Users/62822/AndroidStudioProjects/Kost2/app/src/main/res/layout/activity_main.xml" value="0.15" />
+        <entry key="..\:/Users/62822/AndroidStudioProjects/Kost2/app/src/main/res/layout/activity_intro_fragment1.xml" value="0.11574074074074074" />
+        <entry key="..\:/Users/62822/AndroidStudioProjects/Kost2/app/src/main/res/layout/activity_intro_fragment2.xml" value="0.11574074074074074" />
+        <entry key="..\:/Users/62822/AndroidStudioProjects/Kost2/app/src/main/res/layout/activity_intro_fragment3.xml" value="0.11574074074074074" />
+        <entry key="..\:/Users/62822/AndroidStudioProjects/Kost2/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/62822/AndroidStudioProjects/Kost2/app/src/main/res/layout/activity_second_fragment.xml" value="0.1" />
         <entry key="..\:/Users/62822/AndroidStudioProjects/Kost2/app/src/main/res/layout/item_detail.xml" value="0.33" />
         <entry key="..\:/Users/62822/AndroidStudioProjects/Kost2/app/src/main/res/layout/item_user.xml" value="0.25" />
